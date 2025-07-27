@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://juanjosejurado.github.io/diseno-web-cordoba/sitemap.xml
