@@ -5,4 +5,4 @@ Disallow: /tmp/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://juanjosejurado.github.io/diseno-web-cordoba/sitemap.xml
+Sitemap: diseñowebcordoba.es/sitemap.xml
