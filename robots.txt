@@ -3,6 +3,6 @@ Disallow: /admin/
 Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /private/
-Allow: /
+
 
 Sitemap: https://xn--diseowebcordoba-1qb.es/sitemap.xml
