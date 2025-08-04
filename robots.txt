@@ -5,4 +5,4 @@ Disallow: /tmp/
 Disallow: /private/
 
 
-Sitemap: https://xn--diseowebcordoba-1qb.es/sitemap.xml
+Sitemap: https://diseñowebcordoba.es/sitemap.xml
