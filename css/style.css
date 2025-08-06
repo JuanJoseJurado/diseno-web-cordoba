@@ -1,11 +1,169 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+
 body {
     color: #797979;
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
+
+    /* Estilos generales para las tarjetas de precios */
+    .price-item {
+        background: #ffffff; /* Fondo blanco para las tarjetas */
+        border-radius: 15px; /* Bordes más redondeados */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra sutil para profundidad */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el efecto hover */
+        margin-bottom: 30px; /* Espacio entre tarjetas */
+        overflow: hidden; /* Asegura que el contenido respete el border-radius */
+    }
+
+    .price-item:hover {
+        transform: translateY(-8px); /* Efecto de elevación al pasar el ratón */
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); /* Sombra más pronunciada al hover */
+    }
+
+    /* Estilos para el encabezado de la tarjeta */
+    .price-header {
+        background-color: #f8f9fa; /* Fondo ligeramente gris para el encabezado */
+        padding: 30px 25px; /* Relleno generoso */
+        border-bottom: 1px solid #e9ecef; /* Separador sutil */
+        text-align: center;
+    }
+
+    .price-item.featured-item .price-header {
+        background-color: #EF233C; /* Rojo primario para la tarjeta destacada */
+        color: #ffffff; /* Texto blanco en la destacada */
+    }
+
+    .price-title h2 {
+        font-size: 28px; /* Tamaño de fuente del título del paquete */
+        font-weight: 700; /* Negrita */
+        margin-bottom: 5px; /* Espacio debajo del título */
+        color: #343a40; /* Color negro para los títulos h2 */
+    }
+
+    .price-item.featured-item .price-title h2 {
+        color: #ffffff; /* Títulos h2 blancos en la tarjeta destacada */
+    }
+
+    .price-title p {
+        font-size: 16px; /* Tamaño de fuente para la descripción corta */
+        color: #6c757d; /* Color de texto más suave */
+        margin-bottom: 0;
+    }
+
+    .price-item.featured-item .price-title p {
+        color: #e2e6ea; /* Color más claro para la descripción en destacada */
+    }
+
+    .price-prices {
+        margin-top: 20px; /* Espacio encima del precio */
+    }
+
+    .price-prices h2 {
+        font-size: 45px; /* Tamaño de fuente grande para el precio */
+        font-weight: 800; /* Extra negrita */
+        color: #EF233C; /* Rojo primario para el precio */
+        margin-bottom: 0;
+    }
+
+    .price-item.featured-item .price-prices h2 {
+        color: #ffffff; /* Precio blanco en destacada */
+    }
+
+    /* Estilos para el cuerpo de la tarjeta (descripción) */
+    .price-body {
+        padding: 25px;
+        background-color: #ffffff;
+    }
+
+    .price-description strong {
+        display: block; /* Para que los títulos de Beneficios/Incluye estén en su propia línea */
+        font-size: 17px;
+        margin-bottom: 10px;
+        color: #343a40; /* Color oscuro para los títulos de beneficios */
+    }
+
+    .price-description ul {
+        list-style: none; /* Elimina los puntos de lista por defecto */
+        padding: 0;
+        margin: 0 0 15px 0; /* Espacio debajo de la lista */
+    }
+
+    .price-description li {
+        font-size: 15px;
+        line-height: 1.8; /* Espaciado entre líneas */
+        color: #495057; /* Color de texto para los ítems de la lista */
+        position: relative;
+        padding-left: 0; /* Elimina el espacio para el icono de check */
+        margin-bottom: 5px;
+    }
+
+    .price-description li::before {
+        /* Se ha eliminado el contenido del icono de check */
+        content: none; /* Esto es lo que borra los ticks */
+    }
+
+    .price-description li em {
+        color: #EF233C; /* Rojo para notas como "No incluye" */
+        font-style: normal; /* Elimina la cursiva por defecto */
+    }
+
+    /* Estilos para el pie de la tarjeta (botón) */
+    .price-footer {
+        padding: 25px;
+        text-align: center;
+        border-top: 1px solid #e9ecef; /* Separador sutil */
+        background-color: #f8f9fa; /* Fondo ligeramente gris */
+    }
+
+    .price-item.featured-item .price-footer {
+        background-color: #EF233C; /* Fondo rojo para el pie de la destacada */
+        border-top-color: #EF233C;
+    }
+
+    .price-action .btn {
+        padding: 12px 30px; /* Relleno para el botón */
+        border-radius: 50px; /* Botón redondeado */
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: #EF233C; /* Rojo primario del botón */
+        color: #ffffff; /* Texto blanco del botón */
+        border: 2px solid #EF233C; /* Borde del mismo color */
+        transition: all 0.3s ease;
+    }
+
+    .price-action .btn:hover {
+        background-color: #C0392B; /* Rojo más oscuro al hover */
+        border-color: #C0392B;
+    }
+
+    /* Corrección para el botón en tarjeta destacada al hacer hover */
+    .price-item.featured-item .price-action .btn {
+        background-color: #ffffff; /* Botón blanco en destacada */
+        color: #EF233C; /* Texto rojo en destacada */
+        border-color: #ffffff;
+    }
+
+    .price-item.featured-item .price-action .btn:hover {
+        background-color: #EF233C; /* Fondo rojo al hover en destacada */
+        color: #343a40; /* Texto negro al hover en destacada */
+        border-color: #EF233C; /* Borde rojo al hover en destacada */
+    }
+
+    /* Ajustes para el título de la sección de precios */
+    .section-header h2 {
+        margin-bottom: 30px; /* Espacio debajo del título principal de la sección */
+        color: #343a40; /* Color negro para el h2 principal de la sección */
+    }
+
+    /* Ajuste para que el "No incluye" se vea bien */
+    .price-description ul:last-of-type {
+        margin-bottom: 0; /* Elimina el margen inferior de la última lista para el texto "No incluye" */
+    }
+
 
 h1,
 h2, 
