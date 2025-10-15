@@ -32,60 +32,190 @@
 
     <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.disenowebcordoba.es/#localbusiness",
-      "name": "Diseño Web Córdoba | Juan José Jurado",
-      "description": "Diseñador Web experto en WordPress y estrategias de Posicionamiento SEO Local para negocios y autónomos en Córdoba.",
-      "url": "https://www.disenowebcordoba.es/",
-      "telephone": "+34-603-368-076",
-      "image": "https://www.disenowebcordoba.es/img/favicon.png", 
-      "priceRange": "$$$", 
-      "areaServed": {
-        "@type": "City",
-        "name": "Córdoba"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Calle Ronda de la manca, 2",
-        "addressLocality": "Córdoba",
-        "addressRegion": "Andalucía",
-        "postalCode": "14010",
-        "addressCountry": "ES"
-      },
-      "hasMap": "https://www.google.com/maps/place/Calle+Ronda+de+la+Manca,+2,+14010+C%C3%B3rdoba",
-      
-      "openingHoursSpecification": [
+    "@context": "https://schema.org",
+    "@graph": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
-          "opens": "09:00",
-          "closes": "18:00"
+            "@type": [
+                "LocalBusiness",
+                "ProfessionalService"
+            ],
+            "@id": "https://www.disenowebcordoba.es/#localbusiness",
+            "name": "Diseño Web Córdoba | Juan José Jurado",
+            "description": "Diseñador Web experto en WordPress y estrategias de Posicionamiento SEO Local para negocios y autónomos en Córdoba.",
+            "url": "https://www.disenowebcordoba.es/",
+            "image": "https://www.disenowebcordoba.es/img/favicon.png",
+            "telephone": "+34-603-368-076",
+            "priceRange": "$$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle Ronda de la Manca, 2",
+                "addressLocality": "Córdoba",
+                "addressRegion": "Andalucía",
+                "postalCode": "14010",
+                "addressCountry": "ES"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 37.8863438,
+                "longitude": -4.7645574
+            },
+            "hasMap": "https://www.google.com/maps/place/Dise%C3%B1o+Web+Cordoba/@37.8863438,-4.7671323,17z",
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "10:00",
+                    "closes": "13:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "17:30",
+                    "closes": "22:00"
+                }
+            ],
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=61550821967280",
+                "https://www.instagram.com/airyckdev/",
+                "https://www.linkedin.com/in/juan-jose-jurado-perez-809237191/"
+            ],
+            "founder": {
+                "@type": "Person",
+                "name": "Juan José Jurado",
+                "jobTitle": "Diseñador Web y Consultor SEO",
+                "sameAs": [
+                    "https://www.linkedin.com/in/juan-jose-jurado-perez-809237191/"
+                ]
+            },
+            "knowsAbout": [
+                "WordPress",
+                "Diseño Web",
+                "SEO Local",
+                "Tiendas Online",
+                "Marketing Digital"
+            ],
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://www.disenowebcordoba.es/#webpage"
+            },
+            "contactPoint": [
+                {
+                    "@type": "ContactPoint",
+                    "telephone": "+34-603-368-076",
+                    "contactType": "customer service",
+                    "areaServed": "ES",
+                    "availableLanguage": "es"
+                }
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Planes de Diseño Web",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "url": "https://www.disenowebcordoba.es/#landing-basica",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Landing Page Básica",
+                            "description": "1 página responsive + integración RRSS + alojamiento 1 año",
+                            "serviceType": "Diseño Web",
+                            "areaServed": {
+                                "@type": "City",
+                                "name": "Córdoba"
+                            }
+                        },
+                        "price": "190",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "url": "https://www.disenowebcordoba.es/#web-inicial",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Web Corporativa Inicial",
+                            "description": "Hasta 5 secciones con SEO básico y hosting 1 año",
+                            "serviceType": "Diseño Web",
+                            "areaServed": {
+                                "@type": "City",
+                                "name": "Córdoba"
+                            }
+                        },
+                        "price": "490",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "url": "https://www.disenowebcordoba.es/#web-pro",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Web Corporativa Pro",
+                            "description": "Hasta 9 secciones, diseño personalizado, 2 meses de mantenimiento y SEO optimizado",
+                            "serviceType": "Diseño Web",
+                            "areaServed": {
+                                "@type": "City",
+                                "name": "Córdoba"
+                            }
+                        },
+                        "price": "790",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Organization",
+            "@id": "https://www.disenowebcordoba.es/#organization",
+            "name": "Diseño Web Córdoba | Juan José Jurado",
+            "url": "https://www.disenowebcordoba.es/",
+            "logo": "https://www.disenowebcordoba.es/img/favicon.png",
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=61550821967280",
+                "https://www.instagram.com/airyckdev/",
+                "https://www.linkedin.com/in/juan-jose-jurado-perez-809237191/"
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://www.disenowebcordoba.es/#website",
+            "url": "https://www.disenowebcordoba.es/",
+            "name": "Diseño Web Córdoba",
+            "description": "Diseño Web en Córdoba por Juan José Jurado. Creación de sitios web modernos, SEO local y mantenimiento profesional.",
+            "inLanguage": "es"
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://www.disenowebcordoba.es/#webpage",
+            "url": "https://www.disenowebcordoba.es/",
+            "name": "Diseño Web Córdoba - Creación de sitios web profesionales",
+            "description": "Diseñador web experto en WordPress y SEO local para negocios en Córdoba.",
+            "inLanguage": "es",
+            "isPartOf": {
+                "@id": "https://www.disenowebcordoba.es/#website"
+            },
+            "about": {
+                "@id": "https://www.disenowebcordoba.es/#localbusiness"
+            }
         }
-      ],
-      
-      "knowsAbout": ["WordPress", "Diseño Web", "SEO Local", "Tiendas Online"],
-      
-    },
-    {
-      "@type": "WebSite",
-      "url": "https://www.disenowebcordoba.es/",
-      "name": "diseñowebcordoba.es",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.disenowebcordoba.es/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-  ]
+    ]
 }
     </script>
 
