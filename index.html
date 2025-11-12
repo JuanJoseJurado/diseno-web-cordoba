@@ -8,23 +8,71 @@
         <meta name="description" content="¿Necesitas una web que venda en Córdoba? Diseño WordPress optimizado para SEO Local. 🚀 ¡Garantía de resultados! Pide tu consultoría GRATUITA hoy.">
         <meta name="author" content="Juan José Jurado">
         <meta name="robots" content="index, follow">
-        <meta name="geo.region" content="ES-CO">
-        <meta name="geo.placename" content="Córdoba">
         <!-- Favicons -->
         <link href="img/favicon.ico" rel="icon">
         <link href="img/favicon.ico" rel="apple-touch-icon">
-        <!-- Fonts -->
+        <!-- Preconnect a Google Fonts -->
         <link href="https://fonts.googleapis.com" rel="preconnect">
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!-- Vendor CSS Files -->
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-        <!-- Main CSS File -->
-        <link href="assets/css/main.css" rel="stylesheet">
+        <!-- Google Fonts diferido -->
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        >
+        <noscript>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+        </noscript>
+        <!-- Critical CSS inline (ejemplo básico, incluir lo mínimo para header y hero) -->
+        <style>
+            :root{--default-font:"Roboto", sans-serif;--heading-font:"Raleway", sans-serif;--background-color:#040000;--default-color:#f8f8f8;--heading-color:#ffffff;--accent-color:#e59d02;--surface-color:#191919;--contrast-color:#ffffff}body{font-family:var(--default-font);color:var(--default-color);background-color:var(--background-color)}h1,h2,h3,h4,h5,h6{font-family:var(--heading-font);color:var(--heading-color)}.header{background-color:var(--background-color);color:var(--default-color);padding:15px 0;z-index:997}.header .logo h1{font-size:30px;font-weight:700;color:var(--heading-color)}.navmenu a{font-family:var(--heading-font);font-weight:600;color:var(--default-color);padding:18px 15px}.navmenu .active,.navmenu li:hover>a{color:var(--accent-color)}.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:120px;padding-bottom:60px;background-color:var(--background-color)}.hero .hero-wrapper{max-width:900px;margin:0 auto}.hero .hero-title{font-size:48px;font-weight:900;color:var(--heading-color);line-height:1.1;margin-bottom:25px}.hero .hero-title .typed{-webkit-background-clip:text;-webkit-text-fill-color:#fff0}.hero .hero-description{font-size:1.2rem;line-height:1.6;color:color-mix(in srgb,var(--default-color),transparent 20%);max-width:600px;margin:0 auto 40px}.hero .hero-actions .action-btn{font-weight:600;font-size:16px;padding:16px 32px;border-radius:50px;text-decoration:none}
+        </style>
+        <!-- Vendor CSS no crítico cargado diferido -->
+        <link
+            rel="preload"
+            href="assets/vendor/bootstrap/css/bootstrap.min.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        >
+        <link
+            rel="preload"
+            href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        >
+        <link
+            rel="preload"
+            href="assets/vendor/aos/aos.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        >
+        <link
+            rel="preload"
+            href="assets/vendor/glightbox/css/glightbox.min.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        >
+        <link
+            rel="preload"
+            href="assets/vendor/swiper/swiper-bundle.min.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        >
+        <link
+            rel="preload"
+            href="assets/css/main.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        >
+        <noscript>
+            <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+            <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+            <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+            <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+            <link href="assets/css/main.css" rel="stylesheet">
+        </noscript>
         <!-- Schema Markup -->
         <script type="application/ld+json">
 {
@@ -157,17 +205,17 @@
                 <div class="container">
                     <div class="hero-wrapper">
                         <div class="hero-main-content text-center">
-                            <h1 class="hero-title" >
+                            <h1 class="hero-title">
                                 Diseño Web Profesional en Córdoba
                                 <br>
                                 <span class="typed" data-typed-items="WordPress Optimizado,SEO Local,Tiendas Online"></span>
                             </h1>
-                            <p class="hero-description" >
+                            <p class="hero-description">
                                 Tu negocio merece una web que venda.
                                 </br>
                                 Yo la creo por ti.
                             </p>
-                            <div class="hero-actions" >
+                            <div class="hero-actions">
                             </a>
                             <a href="#pricing" class="action-btn secondary">
                                 <i class="bi bi-tag"></i>
@@ -182,14 +230,14 @@
         <!-- Services Section -->
         <section id="services" class="services section">
             <!-- Section Title -->
-            <div class="container" >
+            <div class="container">
                 <div class="container section-title" data-aos="fade-up">
                     <!--<h2>Servicios</h2>
         <p>Soluciones completas de diseño web para tu negocio en Córdoba</p> --></div>
                 <!-- End Section Title -->
                 <div class="services-grid mt-5">
                     <div class="row g-4">
-                        <div class="col-lg-4 col-md-6" >
+                        <div class="col-lg-4 col-md-6">
                             <div class="service-card">
                                 <div class="card-number">
                                     <span>01</span>
