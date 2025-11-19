@@ -212,12 +212,12 @@
                             </h1>
                             <p class="hero-description">
                                 Tu negocio merece una web que venda.
-                                <br>
+                                </br>
                                 Yo la creo por ti.
                             </p>
                             <div class="hero-actions">
-                            
-                            <a href="#pricing" class="action-btn primary">
+                            </a>
+                            <a href="#pricing" class="action-btn secondary">
                                 <i class="bi bi-tag"></i>
                                 <span>Ver precios y servicios</span>
                             </a>
@@ -1240,23 +1240,5 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
-    <style>
-/* Forzar que el botón del hero reciba clics */
-/* FIX: evitar overlays bloqueando el botón del hero en móvil */
-.hero {
-  position: relative;
-}
-
-.hero .hero-actions {
-  position: relative;
-  z-index: 20; /* suficiente mientras supere al overlay problemático */
-}
-
-.hero .action-btn {
-  position: relative;
-  z-index: 30;
-}
-
-</style>
 </body>
 </html>
