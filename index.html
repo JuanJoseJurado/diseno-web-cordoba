@@ -38,7 +38,7 @@
         
         <!-- Core Vendor CSS (Carga síncrona para evitar FOUC en layout base) -->
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/main.css" rel="stylesheet">
+        <link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
         <!-- Vendor CSS no crítico (Cargado diferido para PageSpeed) -->
         <link
