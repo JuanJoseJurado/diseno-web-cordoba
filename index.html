@@ -37,7 +37,8 @@
         </style>
         
         <!-- Core Vendor CSS (Carga síncrona para evitar FOUC en layout base) -->
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"></noscript>
         <link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
         <!-- Vendor CSS no crítico (Cargado diferido para PageSpeed) -->
@@ -398,7 +399,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
-                            <img src="img/oficina.webp" alt="Servicios Diseño Web" class="img-fluid" style="border-radius: 16px; box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);" width="600" height="400" loading="eager" fetchpriority="high">
+                            <img src="img/oficina.webp" alt="Servicios Diseño Web" class="img-fluid" style="border-radius: 16px; box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12); width: 100%; height: auto;" width="896" height="1200" loading="eager" fetchpriority="high">
                         </div>
                     </div>
                 </div>
@@ -444,7 +445,7 @@
           <article class="testimonial-card">
 
             <div class="testimonial-avatar">
-              <img src="assets/img/person/person-f-5.webp" alt="María López" width="80" height="80" loading="lazy" decoding="async">
+              <img src="assets/img/person/person-f-5.webp" alt="María López" width="1024" height="1024" class="img-fluid" style="width: 80px; height: 80px;" loading="lazy" decoding="async">
             </div>
 
             <div class="testimonial-content">
@@ -481,7 +482,7 @@
           <article class="testimonial-card">
 
             <div class="testimonial-avatar">
-              <img src="assets/img/person/person-m-2.webp" alt="Carlos Fernández" width="80" height="80" loading="lazy" decoding="async">
+              <img src="assets/img/person/person-m-2.webp" alt="Carlos Fernández" width="1024" height="1024" class="img-fluid" style="width: 80px; height: 80px;" loading="lazy" decoding="async">
             </div>
 
             <div class="testimonial-content">
@@ -518,7 +519,7 @@
           <article class="testimonial-card">
 
             <div class="testimonial-avatar">
-              <img src="assets/img/person/person-f-6.webp" alt="Ana Ramírez" width="80" height="80" loading="lazy" decoding="async">
+              <img src="assets/img/person/person-f-6.webp" alt="Ana Ramírez" width="1024" height="1024" class="img-fluid" style="width: 80px; height: 80px;" loading="lazy" decoding="async">
             </div>
 
             <div class="testimonial-content">
@@ -555,7 +556,7 @@
           <article class="testimonial-card">
 
             <div class="testimonial-avatar">
-              <img src="assets/img/person/person-m-3.webp" alt="Francisco Gómez" width="80" height="80" loading="lazy" decoding="async">
+              <img src="assets/img/person/person-m-3.webp" alt="Francisco Gómez" width="1024" height="1024" class="img-fluid" style="width: 80px; height: 80px;" loading="lazy" decoding="async">
             </div>
 
             <div class="testimonial-content">
