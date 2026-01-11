@@ -11,7 +11,10 @@
         <!-- Favicons -->
         <link href="img/favicon.ico" rel="icon">
         <link href="img/favicon.ico" rel="apple-touch-icon">
-        <!-- Preconnect a Google Fonts -->
+        <!-- DNS Prefetch y Preconnect para recursos externos críticos -->
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+        <link rel="dns-prefetch" href="https://formspree.io">
         <link href="https://fonts.googleapis.com" rel="preconnect">
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <!-- Google Fonts diferido -->
@@ -24,17 +27,16 @@
         <noscript>
             <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
         </noscript>
-        <!-- Critical CSS inline (ejemplo básico, incluir lo mínimo para header y hero) 
+        <!-- Critical CSS inline (Para evitar FOUC y mejorar LCP) -->
         <style>
-            :root{--default-font:"Roboto", sans-serif;--heading-font:"Raleway", sans-serif;--background-color:#ffffff;--default-color:#444444;--heading-color:#0e2a47;--accent-color:#1059AD;--surface-color:#f8f9fa;--contrast-color:#ffffff}body{font-family:var(--default-font);color:var(--default-color);background-color:var(--background-color)}h1,h2,h3,h4,h5,h6{font-family:var(--heading-font);color:var(--heading-color)}.header{background-color:var(--background-color);color:var(--default-color);padding:15px 0;z-index:997}.header .logo h1{font-size:30px;font-weight:700;color:var(--heading-color)}.navmenu a{font-family:var(--heading-font);font-weight:600;color:var(--nav-color);padding:18px 15px}.navmenu .active,.navmenu li:hover>a{color:var(--accent-color)}.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:120px;padding-bottom:60px;background-color:var(--background-color)}.hero .hero-wrapper{max-width:900px;margin:0 auto}.hero .hero-title{font-size:48px;font-weight:900;color:var(--heading-color);line-height:1.1;margin-bottom:25px}.hero .hero-title .typed{-webkit-background-clip:text;-webkit-text-fill-color:var(--accent-color)}.hero .hero-description{font-size:1.2rem;line-height:1.6;color:var(--default-color);max-width:600px;margin:0 auto 40px}.hero .hero-actions .action-btn{font-weight:600;font-size:16px;padding:16px 32px;border-radius:50px;text-decoration:none}
-        </style>   -->
-        <!-- Vendor CSS no crítico cargado diferido -->
-        <link
-            rel="preload"
-            href="assets/vendor/bootstrap/css/bootstrap.min.css"
-            as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
-        >
+            :root{--default-font:"Roboto", sans-serif;--heading-font:"Raleway", sans-serif;--background-color:#ffffff;--default-color:#444444;--heading-color:#0e2a47;--accent-color:#1059AD;--surface-color:#f8f9fa;--contrast-color:#ffffff}body{font-family:var(--default-font);color:var(--default-color);background-color:var(--background-color)}h1,h2,h3,h4,h5,h6{font-family:var(--heading-font);color:var(--heading-color)}.header{background-color:var(--background-color);color:var(--default-color);padding:15px 0;z-index:997}.header .logo h1{font-size:30px;font-weight:700;color:var(--heading-color)}.navmenu a{font-family:var(--heading-font);font-weight:600;color:var(--nav-color);padding:18px 15px}.navmenu .active,.navmenu li:hover>a{color:var(--accent-color)}.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:120px;padding-bottom:60px;background-color:var(--background-color)}.hero .hero-wrapper{max-width:900px;margin:0 auto}.hero .hero-title{font-size:48px;font-weight:900;color:var(--heading-color);line-height:1.1;margin-bottom:25px}.hero .hero-title .typed{-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:var(--accent-color)}.hero .hero-description{font-size:1.2rem;line-height:1.6;color:var(--default-color);max-width:600px;margin:0 auto 40px}.hero .hero-actions .action-btn{font-weight:600;font-size:16px;padding:16px 32px;border-radius:50px;text-decoration:none}
+        </style>
+        
+        <!-- Core Vendor CSS (Carga síncrona para evitar FOUC en layout base) -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+
+        <!-- Vendor CSS no crítico (Cargado diferido para PageSpeed) -->
         <link
             rel="preload"
             href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
@@ -59,19 +61,11 @@
             as="style"
             onload="this.onload=null;this.rel='stylesheet'"
         >
-        <link
-            rel="preload"
-            href="assets/css/main.css"
-            as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
-        >
         <noscript>
-            <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
             <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
             <link href="assets/vendor/aos/aos.css" rel="stylesheet">
             <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
             <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-            <link href="assets/css/main.css" rel="stylesheet">
         </noscript>
         <!-- Schema Markup -->
         <script type="application/ld+json">
@@ -400,7 +394,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
-                            <img src="img/oficina.webp" alt="Servicios Diseño Web" class="img-fluid" style="border-radius: 16px; box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);" width="600" height="400" loading="lazy">
+                            <img src="img/oficina.webp" alt="Servicios Diseño Web" class="img-fluid" style="border-radius: 16px; box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);" width="600" height="400" loading="eager" fetchpriority="high">
                         </div>
                     </div>
                 </div>
@@ -446,7 +440,7 @@
           <article class="testimonial-card">
 
             <div class="testimonial-avatar">
-              <img src="assets/img/person/person-f-5.webp" alt="María López" width="80" height="80" loading="lazy">
+              <img src="assets/img/person/person-f-5.webp" alt="María López" width="80" height="80" loading="lazy" decoding="async">
             </div>
 
             <div class="testimonial-content">
@@ -483,7 +477,7 @@
           <article class="testimonial-card">
 
             <div class="testimonial-avatar">
-              <img src="assets/img/person/person-m-2.webp" alt="Carlos Fernández" width="80" height="80" loading="lazy">
+              <img src="assets/img/person/person-m-2.webp" alt="Carlos Fernández" width="80" height="80" loading="lazy" decoding="async">
             </div>
 
             <div class="testimonial-content">
@@ -520,7 +514,7 @@
           <article class="testimonial-card">
 
             <div class="testimonial-avatar">
-              <img src="assets/img/person/person-f-6.webp" alt="Ana Ramírez" width="80" height="80" loading="lazy">
+              <img src="assets/img/person/person-f-6.webp" alt="Ana Ramírez" width="80" height="80" loading="lazy" decoding="async">
             </div>
 
             <div class="testimonial-content">
@@ -557,7 +551,7 @@
           <article class="testimonial-card">
 
             <div class="testimonial-avatar">
-              <img src="assets/img/person/person-m-3.webp" alt="Francisco Gómez" width="80" height="80" loading="lazy">
+              <img src="assets/img/person/person-m-3.webp" alt="Francisco Gómez" width="80" height="80" loading="lazy" decoding="async">
             </div>
 
             <div class="testimonial-content">
@@ -615,7 +609,7 @@
                 <div class="row align-items-center justify-content-between g-lg-5">
                     <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                         <div class="image-wrapper" style="position: relative;">
-                            <img src="img/about.webp" class="img-fluid rounded" alt="Sobre Juan José Jurado" style="border-radius: 16px; box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12); border: 4px solid white;" width="600" height="450" loading="lazy">
+                            <img src="img/about.webp" class="img-fluid rounded" alt="Sobre Juan José Jurado" style="border-radius: 16px; box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12); border: 4px solid white;" width="600" height="450" loading="lazy" decoding="async">
                             <div style="position: absolute; top: -20px; right: -20px; background: linear-gradient(135deg, #1059AD, #4a90e2); color: white; padding: 20px; border-radius: 16px; box-shadow: 0 8px 24px rgba(16, 89, 173, 0.3);">
                                 <div style="text-align: center;">
                                     <div style="font-size: 2.5rem; font-weight: 900; line-height: 1;">10+</div>
@@ -902,7 +896,7 @@
                         <div class="swiper-slide">
                             <div class="portfolio-card">
                                 <div class="portfolio-img">
-                                    <img src="img/portfolio-1.png" class="img-fluid" alt="Clases de Reciclaje" loading="lazy">
+                                    <img src="img/portfolio-1.png" class="img-fluid" alt="Clases de Reciclaje" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-actions">
                                             <a href="https://clasesdereciclaje.es/" target="_blank" class="btn-preview"><i class="bi bi-eye"></i> Ver Web</a>
@@ -921,7 +915,7 @@
                         <div class="swiper-slide">
                             <div class="portfolio-card">
                                 <div class="portfolio-img">
-                                    <img src="img/portfolio-2.png" class="img-fluid" alt="Multiservicios RGF" loading="lazy">
+                                    <img src="img/portfolio-2.png" class="img-fluid" alt="Multiservicios RGF" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-actions">
                                             <a href="https://multiserviciosrgf.es" target="_blank" class="btn-preview"><i class="bi bi-eye"></i> Ver Web</a>
@@ -940,7 +934,7 @@
                         <div class="swiper-slide">
                             <div class="portfolio-card">
                                 <div class="portfolio-img">
-                                    <img src="img/portfolio-3.png" class="img-fluid" alt="Jx3 Beats Shop" loading="lazy">
+                                    <img src="img/portfolio-3.png" class="img-fluid" alt="Jx3 Beats Shop" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-actions">
                                             <a href="https://juanjosejurado.github.io/jx3beatstore/" target="_blank" class="btn-preview"><i class="bi bi-eye"></i> Ver Web</a>
@@ -959,7 +953,7 @@
                         <div class="swiper-slide">
                             <div class="portfolio-card">
                                 <div class="portfolio-img">
-                                    <img src="img/portfolio-4.png" class="img-fluid" alt="Autoescuela Ojén" loading="lazy">
+                                    <img src="img/portfolio-4.png" class="img-fluid" alt="Autoescuela Ojén" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-actions">
                                             <a href="https://juanjosejurado.github.io/autoescuelaojen/" target="_blank" class="btn-preview"><i class="bi bi-eye"></i> Ver Web</a>
@@ -978,7 +972,7 @@
                         <div class="swiper-slide">
                             <div class="portfolio-card">
                                 <div class="portfolio-img">
-                                    <img src="img/portfolio-9.png" class="img-fluid" alt="Pulidos Abrillantados" loading="lazy">
+                                    <img src="img/portfolio-9.png" class="img-fluid" alt="Pulidos Abrillantados" width="800" height="500" loading="lazy" decoding="async">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-actions">
                                             <a href="https://pulidosabrillantadoscordoba.es/" target="_blank" class="btn-preview"><i class="bi bi-eye"></i> Ver Web</a>
@@ -1512,16 +1506,16 @@
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
         <i class="bi bi-arrow-up-short"></i>
     </a>
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Vendor JS Files (Defer para no bloquear el parsing del HTML) -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/vendor/php-email-form/validate.js" defer></script>
+    <script src="assets/vendor/aos/aos.js" defer></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+    <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
     <style>
 /* Forzar que el botón del hero reciba clics */
 /* FIX: evitar overlays bloqueando el botón del hero en móvil */
