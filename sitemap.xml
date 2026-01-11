@@ -51,6 +51,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-freelance-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/publicidad-google-cordoba.html</loc>
     <lastmod>2026-01-11</lastmod>
     <priority>0.9</priority>
@@ -61,10 +66,56 @@
     <priority>0.85</priority>
   </url>
   
+  <!-- Nuevas Landings Rescatadas -->
+  <url>
+    <loc>https://diseñowebcordoba.es/tiendas-online.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/mantenimiento-web-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-autonomos.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-empresas.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/rediseno-web-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.85</priority>
+  </url>
+
   <!-- Ayuda/Precios -->
   <url>
     <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/precio-pagina-web-cordoba.html</loc>
     <lastmod>2026-01-11</lastmod>
     <priority>0.95</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://diseñowebcordoba.es/blog/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Landings Locales (Fase 4) -->
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-lucena/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-puente-genil/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>

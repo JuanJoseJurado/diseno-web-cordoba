@@ -1,15 +1,417 @@
 ﻿<!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+<head>
     <meta charset="utf-8">
-    <title>Redireccionando...</title>
-    <script>
-      window.location.replace("https://diseñowebcordoba.es");
-    </script>
-    <meta http-equiv="refresh" content="0; url=https://diseñowebcordoba.es">
-  </head>
-  <body>
-    <p>Si no eres redirigido, haz clic aquí: <a href="https://diseñowebcordoba.es">Ir a la nueva página de servicios</a>.</p>
-  </body>
-</html>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>🛒 Diseño de Tiendas Online en Córdoba | WooCommerce & SEO | Juan José Jurado</title>
+    <meta name="keywords" content="diseño tiendas online córdoba, crear tienda online córdoba, woocommerce córdoba, ecommerce córdoba, venta online córdoba, diseño web tiendas virtuales">
+    <meta name="description" content="🚀 Vende online con una tienda profesional en Córdoba. Especialista en WooCommerce. Diseño rápido, seguro y optimizado para vender. Presupuesto gratis.">
+    <meta name="author" content="Juan José Jurado">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://diseñowebcordoba.es/tiendas-online.html">
 
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Custom CSS for Landing -->
+    <style>
+        .feature-box {
+            padding: 30px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid #eee;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(16, 89, 173, 0.15);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #1059AD;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .price-card.popular {
+            border: 2px solid #1059AD;
+            transform: scale(1.05);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <h1 class="sitename">Juan José Jurado</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#about">Sobre mí</a></li>
+                    <li><a href="index.html#services" class="active">Servicios</a></li>
+                    <li><a href="index.html#pricing">Precios</a></li>
+                    <li><a href="index.html#contact">Contacto</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-main-content text-center">
+                    <div class="trust-badges mb-4" data-aos="fade-up">
+                        <span><i class="bi bi-star-fill"></i> 4.9/5 en Google</span>
+                        <span><i class="bi bi-cart-check-fill"></i> +20 Tiendas Activas</span>
+                        <span><i class="bi bi-shield-lock-fill"></i> Pagos 100% Seguros</span>
+                    </div>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                        Tu Tienda Online en Córdoba 
+                        <br>
+                        <span class="typed" data-typed-items="Lista para Vender,Optimizada para SEO,Con Pagos Bizum/Stripe"></span>
+                    </h1>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                        <strong style="font-size: 1.4em; color: var(--accent-color);">Desde 790€</strong> · Diseño WooCommerce profesional + SEO incluido
+                        <br>
+                        Vende tus productos en toda España con una plataforma robusta y fácil de gestionar.
+                    </p>
+                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="300" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://wa.me/603368076?text=Hola,%20quiero%20presupuesto%20para%20mi%20tienda%20online" class="action-btn primary" style="font-size: 1.1rem; padding: 18px 35px;">
+                            <i class="bi bi-whatsapp"></i>
+                            <span>WhatsApp Directo</span>
+                        </a>
+                        <a href="#pricing" class="action-btn" style="background: transparent; border: 2px solid var(--accent-color); color: var(--accent-color); font-size: 1.1rem; padding: 18px 35px; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;">
+                            <i class="bi bi-tag"></i>
+                            <span>Ver Precios</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Features Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold">Todo lo que tu eCommerce necesita</h2>
+                    <p class="text-muted">Diseñado para convertir visitas en ventas reales.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-box">
+                            <i class="bi bi-cart-check feature-icon"></i>
+                            <h4>Gestión Sencilla</h4>
+                            <p>Podrás subir productos, cambiar precios y gestionar stock tú mismo sin conocimientos técnicos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-box">
+                            <i class="bi bi-shield-lock feature-icon"></i>
+                            <h4>Pagos Seguros</h4>
+                            <p>Configuración completa de Bizum, Tarjeta (TPV), PayPal y Stripe para la máxima confianza de tus clientes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-box">
+                            <i class="bi bi-phone feature-icon"></i>
+                            <h4>100% Mobile First</h4>
+                            <p>Más del 80% de las ventas online son desde el móvil. Tu tienda se verá perfecta en cualquier pantalla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Deep Content Section 1: Por qué WooCommerce -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h2 class="fw-bold mb-4">La Potencia de WooCommerce para tu Negocio en Córdoba</h2>
+                        <p>A diferencia de plataformas como Shopify que cobran comisiones por cada venta, <strong>WooCommerce es la solución ideal</strong> para el comercio local en Córdoba y Andalucía. Es flexible, escalable y, lo más importante: la tienda es de tu propiedad al 100%.</p>
+                        <p>Trabajamos con código limpio para que tu catálogo cargue en menos de 2 segundos, algo vital para retener clientes y para que Google te premie con mejores posiciones.</p>
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-3 d-flex align-items-start gap-2">
+                                <i class="bi bi-patch-check-fill text-primary mt-1"></i>
+                                <div><strong>Sin cuotas mensuales:</strong> Olvida los 30€ o 50€ fijos al mes solo por tener la web abierta.</div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start gap-2">
+                                <i class="bi bi-patch-check-fill text-primary mt-1"></i>
+                                <div><strong>Escalabilidad total:</strong> Empieza con 10 productos y crece hasta 10.000 sin cambiar de plataforma.</div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start gap-2">
+                                <i class="bi bi-patch-check-fill text-primary mt-1"></i>
+                                <div><strong>SEO Friendly:</strong> La mejor integración con Google Shopping y búsqueda orgánica.</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="featured-image-box p-4" style="background: #f8f9fa; border-radius: 20px; border-left: 5px solid var(--accent-color);">
+                            <h4 class="fw-bold mb-3">¿Por qué no usar Shopify/Wix?</h4>
+                            <p class="small text-muted mb-4">Aunque parecen fáciles al principio, a largo plazo las limitaciones técnicas y las comisiones por venta pueden lastrar el margen de beneficio de tu tienda online.</p>
+                            <div class="table-responsive">
+                                <table class="table table-sm table-borderless">
+                                    <thead>
+                                        <tr class="border-bottom">
+                                            <th>Característica</th>
+                                            <th>WooCommerce</th>
+                                            <th>Otros</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Propiedad</td>
+                                            <td><span class="badge bg-success">Tuya</span></td>
+                                            <td>Alquiler</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Comisión por venta</td>
+                                            <td><span class="badge bg-success">0%</span></td>
+                                            <td>Hasta 2%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Personalización</td>
+                                            <td><span class="badge bg-success">Ilimitada</span></td>
+                                            <td>Limitada</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Content Section 2: Pagos y Logística -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold">Pagos Express y Logística Inteligente</h2>
+                    <p class="text-muted">Eliminamos las barreras que impiden que tus clientes finalicen la compra.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                            <h4 class="fw-bold mb-4 d-flex align-items-center gap-2">
+                                <i class="bi bi-credit-card-2-front text-primary"></i>
+                                Pasarelas de Pago Modernas
+                            </h4>
+                            <p>Configuramos los métodos de pago que tus clientes ya usan y en los que confían. Esto reduce el abandono del carrito en más de un 35%.</p>
+                            <div class="payment-badges d-flex flex-wrap gap-2 mt-3">
+                                <span class="badge bg-light text-dark border p-2"><i class="bi bi-check2"></i> Bizum Empresa</span>
+                                <span class="badge bg-light text-dark border p-2"><i class="bi bi-check2"></i> Apple/Google Pay</span>
+                                <span class="badge bg-light text-dark border p-2"><i class="bi bi-check2"></i> Tarjeta (Stripe/Redsys)</span>
+                                <span class="badge bg-light text-dark border p-2"><i class="bi bi-check2"></i> PayPal</span>
+                                <span class="badge bg-light text-dark border p-2"><i class="bi bi-check2"></i> Transferencia bancaria</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                            <h4 class="fw-bold mb-4 d-flex align-items-center gap-2">
+                                <i class="bi bi-truck text-primary"></i>
+                                Envíos Automáticos
+                            </h4>
+                            <p>Gestionar los envíos no debe ser un quebradero de cabeza. Integramos tu tienda con las principales agencias de transporte para automatizar etiquetas y seguimiento.</p>
+                            <ul class="list-unstyled mb-0 mt-3">
+                                <li><i class="bi bi-chevron-right text-primary me-2"></i> Cálculo automático de portes por peso o zona.</li>
+                                <li><i class="bi bi-chevron-right text-primary me-2"></i> Envío gratuito a partir de X euros de compra.</li>
+                                <li><i class="bi bi-chevron-right text-primary me-2"></i> Integración con correos, SEUR, GLS o MRW.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Content Section 3: Autoridad/Confianza -->
+        <section class="py-5 bg-white">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="zoom-in">
+                        <h2 class="fw-bold mb-4">¿Por qué confiarme el desarrollo de tu eCommerce?</h2>
+                        <p class="lead">No solo soy un diseñador, soy un socio tecnológico para tu negocio en Córdoba. Me aseguro de que tu inversión retorne mediante una web que carga rápido, es fácil de usar y aparece en Google cuando tus clientes buscan tus productos.</p>
+                        <div class="mt-4 p-4 border rounded-3 bg-light">
+                            <p class="mb-0">"He ayudado a más de 20 comercios de Córdoba capital y provincia a digitalizar sus ventas, logrando que el canal online sea hoy su principal fuente de ingresos en muchos casos."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold">Precios Tienda Online Córdoba</h2>
+                    <p class="text-muted">Inversión clara, sin sorpresas ni cuotas ocultas.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="card h-100 p-4 shadow-sm">
+                            <div class="card-body">
+                                <h4 class="fw-bold">Tienda Inicio</h4>
+                                <div class="display-5 fw-bold my-3">790€</div>
+                                <p class="text-muted">Ideal para empezar con pocos productos.</p>
+                                <ul class="list-unstyled mb-4">
+                                    <li><i class="bi bi-check2 text-primary"></i> Hasta 20 productos</li>
+                                    <li><i class="bi bi-check2 text-primary"></i> Pasarela de Pago (Stripe/Bizum)</li>
+                                    <li><i class="bi bi-check2 text-primary"></i> Formación de gestión</li>
+                                    <li><i class="bi bi-check2 text-primary"></i> SEO Básico</li>
+                                </ul>
+                                <a href="https://wa.me/603368076?text=Hola,%20quiero%20la%20Tienda%20Inicio" class="btn btn-outline-primary w-100 rounded-pill">Solicitar Pack</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="card h-100 p-4 shadow border-primary" style="transform: scale(1.05); position: relative;">
+                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">EL MÁS BUSCADO</span>
+                            <div class="card-body">
+                                <h4 class="fw-bold">E-commerce Pro</h4>
+                                <div class="display-5 fw-bold my-3">1.290€</div>
+                                <p class="text-muted">Para negocios que van en serio con la venta online.</p>
+                                <ul class="list-unstyled mb-4">
+                                    <li><i class="bi bi-check2 text-primary"></i> Productos ilimitados</li>
+                                    <li><i class="bi bi-check2 text-primary"></i> Cupones y Descuentos</li>
+                                    <li><i class="bi bi-check2 text-primary"></i> Integración con Instagram Shopping</li>
+                                    <li><i class="bi bi-check2 text-primary"></i> Optimización de Velocidad</li>
+                                </ul>
+                                <a href="https://wa.me/603368076?text=Hola,%20quiero%20el%20Pack%20Ecommerce%20Pro" class="btn btn-primary w-100 rounded-pill shadow">Solicitar Pack</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5">Preguntas sobre Tiendas Online</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqShop">
+                            <div class="faq-item bg-white mb-3 rounded">
+                                <div class="faq-header p-3 border-bottom" onclick="toggleFAQ(this)">
+                                    <h5 class="mb-0">¿Tengo que pagar una cuota mensual?</h5>
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                                <div class="faq-content p-3">
+                                    <p>No. La tienda es tuya al 100%. Solo tendrás que pagar tu hosting y dominio anualmente (como en cualquier web), pero no pagas comisiones por venta ni cuotas mensuales por usar la plataforma.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item bg-white mb-3 rounded">
+                                <div class="faq-header p-3 border-bottom" onclick="toggleFAQ(this)">
+                                    <h5 class="mb-0">¿Es seguro cobrar por la web?</h5>
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                                <div class="faq-content p-3">
+                                    <p>Totalmente. Instalamos certificados SSL (el candado verde) y configuramos pasarelas de pago oficiales con encriptación bancaria. Tus clientes pueden comprar con total tranquilidad.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item bg-white mb-3 rounded">
+                                <div class="faq-header p-3 border-bottom" onclick="toggleFAQ(this)">
+                                    <h5 class="mb-0">¿Aparecerá mi tienda en Google?</h5>
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                                <div class="faq-content p-3">
+                                    <p>Sí. Todas las tiendas que diseño en Córdoba incluyen una optimización SEO básica: arquitectura de categorías lógica, etiquetas optimizadas y alta en Google Search Console. Para resultados más potentes, recomiendo mis planes de SEO mensual.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item bg-white mb-3 rounded">
+                                <div class="faq-header p-3 border-bottom" onclick="toggleFAQ(this)">
+                                    <h5 class="mb-0">¿Puedo gestionar yo mismo los pedidos?</h5>
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                                <div class="faq-content p-3">
+                                    <p>Por supuesto. Al finalizar la web, te entrego una formación de 1 hora por videollamada para que aprendas a subir productos, gestionar el stock y tramitar los pedidos de forma autónoma.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item bg-white mb-3 rounded">
+                                <div class="faq-header p-3 border-bottom" onclick="toggleFAQ(this)">
+                                    <h5 class="mb-0">¿Qué pasa si necesito ayuda técnica después?</h5>
+                                    <i class="bi bi-chevron-down"></i>
+                                </div>
+                                <div class="faq-content p-3">
+                                    <p>Estaré siempre disponible. Puedes contratar mi servicio de mantenimiento web para que yo me encargue de las actualizaciones y la seguridad, o consultarme dudas puntuales por WhatsApp.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Otros Servicios -->
+    <section class="py-5 bg-white border-top">
+        <div class="container text-center">
+            <h3 class="fw-bold mb-4">¿Buscas algo más específico?</h3>
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-3">
+                    <a href="Posicionamiento-SEO-Cordoba/seo-local-cordoba.html" class="btn btn-outline-primary w-100 py-3 rounded-pill">SEO Local</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="diseno-web-autonomos.html" class="btn btn-outline-primary w-100 py-3 rounded-pill">Web Autónomos</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="mantenimiento-web-cordoba.html" class="btn btn-outline-primary w-100 py-3 rounded-pill">Mantenimiento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer light-background">
+        <div class="container copyright text-center mt-4">
+            <p>© <span>2026</span> <strong class="px-1">Juan José Jurado</strong> <span>Todos los derechos reservados</span></p>
+            <div class="credits">Diseño web profesional en Córdoba</div>
+        </div>
+    </footer>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        // Inicialización de Typed.js si existe el elemento
+        const typed = document.querySelector('.typed');
+        if (typed) {
+            let typed_strings = typed.getAttribute('data-typed-items');
+            typed_strings = typed_strings.split(',');
+            new Typed('.typed', {
+                strings: typed_strings,
+                loop: true,
+                typeSpeed: 100,
+                backSpeed: 50,
+                backDelay: 2000
+            });
+        }
+    </script>
+</body>
+</html>
