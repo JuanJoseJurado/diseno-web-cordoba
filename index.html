@@ -17,19 +17,23 @@
         <link rel="dns-prefetch" href="https://formspree.io">
         <link href="https://fonts.googleapis.com" rel="preconnect">
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <!-- Google Fonts diferido -->
+        
+        <!-- Preload LCP Image (Critical para móvil) -->
+        <link rel="preload" as="image" href="img/oficina.webp" fetchpriority="high">
+        
+        <!-- Google Fonts completamente asíncrono (no bloquea render) -->
         <link
-            rel="preload"
+            rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-            as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
+            media="print"
+            onload="this.media='all'"
         >
         <noscript>
             <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
         </noscript>
-        <!-- Critical CSS inline (Para evitar FOUC y mejorar LCP) -->
+        <!-- Critical CSS inline (Para evitar FOUC, mejorar LCP y reducir CLS) -->
         <style>
-            :root{--default-font:"Roboto", sans-serif;--heading-font:"Raleway", sans-serif;--background-color:#ffffff;--default-color:#444444;--heading-color:#0e2a47;--accent-color:#1059AD;--surface-color:#f8f9fa;--contrast-color:#ffffff}body{font-family:var(--default-font);color:var(--default-color);background-color:var(--background-color)}h1,h2,h3,h4,h5,h6{font-family:var(--heading-font);color:var(--heading-color)}.header{background-color:var(--background-color);color:var(--default-color);padding:15px 0;z-index:997}.header .logo h1{font-size:30px;font-weight:700;color:var(--heading-color)}.navmenu a{font-family:var(--heading-font);font-weight:600;color:var(--nav-color);padding:18px 15px}.navmenu .active,.navmenu li:hover>a{color:var(--accent-color)}.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:120px;padding-bottom:60px;background-color:var(--background-color)}.hero .hero-wrapper{max-width:900px;margin:0 auto}.hero .hero-title{font-size:48px;font-weight:900;color:var(--heading-color);line-height:1.1;margin-bottom:25px}.hero .hero-title .typed{-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:var(--accent-color)}.hero .hero-description{font-size:1.2rem;line-height:1.6;color:var(--default-color);max-width:600px;margin:0 auto 40px}.hero .hero-actions .action-btn{font-weight:600;font-size:16px;padding:16px 32px;border-radius:50px;text-decoration:none}
+            :root{--default-font:"Roboto",system-ui,-apple-system,"Segoe UI",sans-serif;--heading-font:"Raleway",sans-serif;--background-color:#ffffff;--default-color:#444444;--heading-color:#0e2a47;--accent-color:#1059AD;--surface-color:#f8f9fa;--contrast-color:#ffffff}body{font-family:var(--default-font);color:var(--default-color);background-color:var(--background-color);margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-family:var(--heading-font);color:var(--heading-color);font-weight:700}@font-face{font-family:'Roboto Fallback';src:local('Arial');size-adjust:100%;ascent-override:92%;descent-override:24%;line-gap-override:0%}@font-face{font-family:'Raleway Fallback';src:local('Arial');size-adjust:95%;ascent-override:90%;descent-override:22%;line-gap-override:0%}.header{background-color:var(--background-color);color:var(--default-color);padding:15px 0;z-index:997;position:fixed;top:0;left:0;right:0}.header .logo h1{font-size:30px;font-weight:700;color:var(--heading-color);margin:0}.navmenu a{font-family:var(--heading-font);font-weight:600;color:var(--nav-color);padding:18px 15px;text-decoration:none}.navmenu .active,.navmenu li:hover>a{color:var(--accent-color)}.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:120px;padding-bottom:60px;background-color:var(--background-color)}.hero .hero-wrapper{max-width:900px;margin:0 auto}.hero .hero-title{font-size:48px;font-weight:900;color:var(--heading-color);line-height:1.1;margin-bottom:25px}@media(max-width:768px){.hero .hero-title{font-size:36px}}.hero .hero-title .typed{color:var(--accent-color)}.hero .hero-description{font-size:1.2rem;line-height:1.6;color:var(--default-color);max-width:600px;margin:0 auto 40px}.hero .hero-actions .action-btn{font-weight:600;font-size:16px;padding:16px 32px;border-radius:50px;text-decoration:none;display:inline-block}
         </style>
         
         <!-- Core Vendor CSS (Carga síncrona para evitar FOUC en layout base) -->
