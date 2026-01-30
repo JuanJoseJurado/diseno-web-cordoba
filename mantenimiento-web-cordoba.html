@@ -1,14 +1,322 @@
-<!DOCTYPE html>
-<html>
-  <head>
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
     <meta charset="utf-8">
-    <title>Redireccionando...</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>🛠️ Mantenimiento Web en Córdoba | Seguridad y Soporte WordPress | Juan José Jurado</title>
+    <meta name="keywords" content="mantenimiento web córdoba, soporte wordpress córdoba, seguridad web córdoba, actualizar wordpress córdoba, mantenimiento técnico web">
+    <meta name="description" content="✅ Mantén tu web siempre rápida y segura. Mantenimiento profesional en Córdoba: copias de seguridad, actualizaciones y soporte técnico directo. Evita hackeos y errores.">
+    <meta name="author" content="Juan José Jurado">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://diseñowebcordoba.es/mantenimiento-web-cordoba.html">
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        .benefit-card {
+            padding: 30px;
+            background: #fff;
+            border-radius: 12px;
+            border-left: 5px solid #1059AD;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+        .plan-card {
+            transition: transform 0.3s;
+        }
+        .plan-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <h1 class="sitename">Juan José Jurado</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#about">Sobre mí</a></li>
+                    <li><a href="index.html#services" class="active">Servicios</a></li>
+                    <li><a href="index.html#pricing">Precios</a></li>
+                    <li><a href="index.html#contact">Contacto</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-main-content text-center">
+                    <div class="trust-badges mb-4" data-aos="fade-up">
+                        <span><i class="bi bi-star-fill"></i> Soporte 24/7</span>
+                        <span><i class="bi bi-shield-lock-fill"></i> Seguridad WordPress</span>
+                        <span><i class="bi bi-cloud-arrow-up-fill"></i> Backups Diarios</span>
+                    </div>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                        Mantenimiento Web Córdoba
+                        <br>
+                        <span class="typed" data-typed-items="Tu Web Siempre Segura,Actualizaciones al Día,Soporte Técnico Directo"></span>
+                    </h1>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                        <strong style="font-size: 1.4em; color: var(--accent-color);">Desde 29€/mes</strong> · Despreocúpate de los errores y hackeos.
+                        <br>
+                        Me encargo de que tu web esté siempre rápida, segura y volando.
+                    </p>
+                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="300" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://wa.me/603368076?text=Hola,%20busco%20mantenimiento%20para%20mi%20web" class="action-btn primary" style="font-size: 1.1rem; padding: 18px 35px;">
+                            <i class="bi bi-whatsapp"></i>
+                            <span>WhatsApp Directo</span>
+                        </a>
+                        <a href="#plans" class="action-btn" style="background: transparent; border: 2px solid var(--accent-color); color: var(--accent-color); font-size: 1.1rem; padding: 18px 35px; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;">
+                            <i class="bi bi-tag"></i>
+                            <span>Ver Planes</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Deep Content Section 1: El valor del mantenimiento -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-7" data-aos="fade-right">
+                        <h2 class="fw-bold mb-4">Tu tranquilidad técnica tiene un nombre</h2>
+                        <p>Internet cambia cada día. Los navegadores se actualizan, WordPress lanza parches de seguridad y los hackers buscan nuevas vulnerabilidades. Una web que hoy funciona perfectamente puede dejar de hacerlo mañana por una incompatibilidad entre un plugin y el servidor.</p>
+                        <p>Con mi servicio de <strong>mantenimiento web en Córdoba</strong>, delegas toda la responsabilidad técnica en un experto. Tu única preocupación será atender a tus clientes, mientras yo me aseguro de que tu escaparate digital esté siempre impecable.</p>
+                        <div class="row g-4 mt-3">
+                            <div class="col-sm-6">
+                                <h5 class="fw-bold"><i class="bi bi-shield-lock text-primary me-2"></i> Seguridad Proactiva</h5>
+                                <p class="small">No esperamos al hackeo. Implementamos firewalls y escaneos de malware constantes.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5 class="fw-bold"><i class="bi bi-lightning-charge text-primary me-2"></i> Optimización WPO</h5>
+                                <p class="small">Limpiamos la base de datos y optimizamos caché para que tu web vuele.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5" data-aos="fade-left">
+                        <div class="p-4 rounded-4 shadow-sm border-start border-primary border-5 bg-light">
+                            <h4 class="fw-bold mb-3">¿Qué pasa si no mantienes tu web?</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2 d-flex gap-2">
+                                    <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                                    <span><strong>Desactualización:</strong> Agujeros de seguridad abiertos.</span>
+                                </li>
+                                <li class="mb-2 d-flex gap-2">
+                                    <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                                    <span><strong>Lentitud:</strong> Tu web se vuelve pesada y lenta con el tiempo.</span>
+                                </li>
+                                <li class="mb-2 d-flex gap-2">
+                                    <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                                    <span><strong>Errores 500:</strong> Pantallazos blancos inesperados.</span>
+                                </li>
+                                <li class="mb-0 d-flex gap-2">
+                                    <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                                    <span><strong>SEO Negativo:</strong> Google penaliza sitios con errores técnicos.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep Content Section 2: El proceso mensual -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold">Gestión técnica integral</h2>
+                    <p class="text-muted">Mucho más que pulsar un botón de "Actualizar".</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                            <div class="display-4 text-primary mb-3"><i class="bi bi-upc-scan"></i></div>
+                            <h5 class="fw-bold">Escaneo Diario</h5>
+                            <p class="small">Buscamos código malicioso y archivos sospechosos cada 24 horas.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                            <div class="display-4 text-primary mb-3"><i class="bi bi-bug"></i></div>
+                            <h5 class="fw-bold">Resolución errores</h5>
+                            <p class="small">Si algo falla tras una actualización, lo corregimos inmediatamente.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                            <div class="display-4 text-primary mb-3"><i class="bi bi-speedometer2"></i></div>
+                            <h5 class="fw-bold">Mejora de Carga</h5>
+                            <p class="small">Ajustamos la compresión de imágenes y scripts para máxima velocidad.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                            <div class="display-4 text-primary mb-3"><i class="bi bi-headset"></i></div>
+                            <h5 class="fw-bold">Soporte Humano</h5>
+                            <p class="small">¿Tienes una duda? WhatsApp directo. Sin tickets interminables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section id="plans" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5">Elige tu plan de tranquilidad</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card p-4 border-0 shadow-sm plan-card">
+                            <h3>Básico</h3>
+                            <div class="h2 fw-bold text-primary">29€<small class="fs-6 text-muted">/mes</small></div>
+                            <ul class="list-unstyled my-4">
+                                <li><i class="bi bi-check text-success"></i> Actualizaciones semanales</li>
+                                <li><i class="bi bi-check text-success"></i> Copias de seguridad (1/semana)</li>
+                                <li><i class="bi bi-check text-success"></i> Monitorización 24/7</li>
+                                <li><i class="bi bi-check text-success"></i> Soporte por Email</li>
+                            </ul>
+                            <a href="https://wa.me/603368076?text=Hola,%20quiero%20el%20Plan%20Básico%20de%20mantenimiento" class="btn btn-outline-primary rounded-pill">Contratar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card p-4 border-primary shadow-lg plan-card" style="background: #fdfdff;">
+                            <span class="badge bg-primary mb-2 align-self-start">RECOMENDADO</span>
+                            <h3>Profesional</h3>
+                            <div class="h2 fw-bold text-primary">49€<small class="fs-6 text-muted">/mes</small></div>
+                            <ul class="list-unstyled my-4">
+                                <li><i class="bi bi-check text-success"></i> Actualizaciones diarias</li>
+                                <li><i class="bi bi-check text-success"></i> Copias de seguridad diarias</li>
+                                <li><i class="bi bi-check text-success"></i> Limpieza de malware incl.</li>
+                                <li><i class="bi bi-check text-success"></i> Soporte WhatsApp Directo</li>
+                                <li><i class="bi bi-check text-success"></i> 1h de cambios mensuales</li>
+                            </ul>
+                            <a href="https://wa.me/603368076?text=Hola,%20quiero%20el%20Plan%20Profesional%20de%20mantenimiento" class="btn btn-primary rounded-pill">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5">Dudas frecuentes</h2>
+                <div class="accordion mx-auto" style="max-width: 800px;" id="faqMaint">
+                    <div class="accordion-item mb-2 border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#f1">
+                                ¿Por qué necesito mantenimiento si mi web ya funciona?
+                            </button>
+                        </h2>
+                        <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faqMaint">
+                            <div class="accordion-body">
+                                Una web sin actualizar es como un coche sin revisiones: tarde o temprano fallará o será hackeada. El mantenimiento preventivo te ahorra cientos de euros en reparaciones futuras y asegura que tu web siempre cargue rápido para tus clientes en Córdoba.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-2 border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#f2">
+                                ¿Qué pasa si mi web es hackeada bajo vuestro mantenimiento?
+                            </button>
+                        </h2>
+                        <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqMaint">
+                            <div class="accordion-body">
+                                En los planes Profesional y superior, la limpieza de malware está incluida. Si a pesar de nuestras medidas de seguridad alguien lograra entrar, restauramos una copia de seguridad y limpiamos el sitio sin coste adicional para ti.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-2 border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#f3">
+                                ¿Puedo cancelar el servicio cuando quiera?
+                            </button>
+                        </h2>
+                        <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqMaint">
+                            <div class="accordion-body">
+                                Sí. Mis servicios de mantenimiento web no tienen permanencia. Si decides marcharte, solo tienes que avisarme con 15 días de antelación y te entregaré todas las credenciales y accesos necesarios.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Otros Servicios -->
+    <section class="py-5 bg-white border-top">
+        <div class="container text-center">
+            <h3 class="fw-bold mb-4">¿Necesitas impulsar tus ventas?</h3>
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-3">
+                    <a href="Posicionamiento-SEO-Cordoba/seo-local-cordoba.html" class="btn btn-outline-primary w-100 py-3 rounded-pill">SEO Local</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="tiendas-online.html" class="btn btn-outline-primary w-100 py-3 rounded-pill">Tiendas Online</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="diseno-web-autonomos.html" class="btn btn-outline-primary w-100 py-3 rounded-pill">Web Autónomos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer light-background">
+        <div class="container copyright text-center mt-4">
+            <p>© <span>2026</span> <strong class="px-1">Juan José Jurado</strong></p>
+            <div class="credits">Mantenimiento Web Profesional en Córdoba</div>
+        </div>
+    </footer>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
     <script>
-      window.location.replace("https://diseñowebcordoba.es");
+        // Inicialización de Typed.js
+        const typed = document.querySelector('.typed');
+        if (typed) {
+            let typed_strings = typed.getAttribute('data-typed-items');
+            typed_strings = typed_strings.split(',');
+            new Typed('.typed', {
+                strings: typed_strings,
+                loop: true,
+                typeSpeed: 100,
+                backSpeed: 50,
+                backDelay: 2000
+            });
+        }
     </script>
-    <meta http-equiv="refresh" content="0; url=https://diseñowebcordoba.es">
-  </head>
-  <body>
-    <p>Si no eres redirigido, haz clic aquí: <a href="https://diseñowebcordoba.es">Ir a la nueva página de servicios</a>.</p>
-  </body>
+</body>
 </html>

@@ -1,228 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
-            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home -->
+  <url>
+    <loc>https://diseñowebcordoba.es/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>1.0</priority>
+  </url>
 
+  <!-- Landings Locales (Fase 1) -->
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-wordpress-cordoba/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-priego-cordoba/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-rute/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-fuente-tojar/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-peñarroya-pueblonuevo/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-a-medida-cordoba/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
 
-<url>
-  <loc>https://diseñowebcordoba.es</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/service</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/project</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/diseno-web-profesional</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/diseno-web-autonomos</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/diseno-web-empresas</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/tiendas-online</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/rediseno-web-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/mantenimiento-web-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/web-rapida-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/posicionamiento-seo-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/marketing-digital-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/faqs-y-ayuda</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/posicionamiento-seo-cordoba.html</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <!-- Servicios SEO y Marketing (Fase 2) -->
+  <url>
+    <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/posicionamiento-seo-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-local-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-freelance-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/publicidad-google-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/gestion-redes-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- Nuevas Landings Rescatadas -->
+  <url>
+    <loc>https://diseñowebcordoba.es/tiendas-online.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/mantenimiento-web-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-autonomos.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-empresas.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/rediseno-web-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.85</priority>
+  </url>
 
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-local-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-tiendas-online</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-wordpress-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/auditoria-seo-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/mejorar-seo-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-freelance-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-rapido-resultados</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-tecnico-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Posicionamiento-SEO-Cordoba/seo-contenido-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/gestion-redes-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/publicidad-google-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/email-marketing-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/community-manager-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/campanas-publicitarias-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/social-ads-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/estrategia-digital-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/marketing-contenidos-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/Marketing-Digital-Cordoba/conversiones-web-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/como-crear-web-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/precio-pagina-web-cordoba</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/que-es-diseno-web</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/mejor-web-para-negocio</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/wordpress-vs-shopify</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/paginas-web-rentables</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/errores-diseno-web</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/cuanto-tarda-web</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/mantenimiento-necesario</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/seo-vs-publicidad</loc>
-  <lastmod>2025-07-27T19:06:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <!-- Ayuda/Precios -->
+  <url>
+    <loc>https://diseñowebcordoba.es/FAQs-y-Ayuda/precio-pagina-web-cordoba.html</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.95</priority>
+  </url>
 
+  <!-- Blog -->
+  <url>
+    <loc>https://diseñowebcordoba.es/blog/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.7</priority>
+  </url>
 
+  <!-- Landings Locales (Fase 4) -->
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-lucena/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diseñowebcordoba.es/diseno-web-puente-genil/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>

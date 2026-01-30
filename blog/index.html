@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Blog de Diseño Web y SEO Córdoba | Consejos para tu Negocio 🚀</title>
+    <meta name="description" content="Aprende cómo mejorar la visibilidad de tu negocio en Córdoba. Consejos sobre diseño web, WordPress, SEO local y marketing digital.">
+    <link href="../img/favicon.ico" rel="icon">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <style>
+        .blog-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid #eee;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .blog-img-wrapper {
+            height: 200px;
+            overflow: hidden;
+        }
+        .blog-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .blog-content {
+            padding: 25px;
+        }
+        .blog-category {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .blog-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--heading-color);
+        }
+        .blog-excerpt {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .read-more {
+            font-weight: 700;
+            color: var(--accent-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+            <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <h1 class="sitename">Juan José Jurado</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html" class="active">Blog</a></li>
+                    <li><a href="../index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" style="padding: 140px 0 80px;">
+            <div class="container text-center">
+                <h1 class="hero-title">Blog de <span style="color: var(--accent-color);">Diseño Web y SEO</span></h1>
+                <p class="hero-description mx-auto" style="max-width: 700px;">
+                    Consejos prácticos, guías y estrategias para convertir tu página web en la mejor herramienta de ventas de tu negocio en Córdoba.
+                </p>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Post Placeholder 1 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="../img/hero-bg.webp" alt="Cómo elegir diseñador web" loading="lazy">
+                            </div>
+                            <div class="blog-content">
+                                <span class="blog-category">Guía 2026</span>
+                                <h3 class="blog-title">Cómo elegir el mejor diseñador web en Córdoba</h3>
+                                <p class="blog-excerpt">No todos los servicios de diseño web son iguales. Descubre qué preguntar antes de contratar para no tirar tu dinero.</p>
+                                <a href="plantilla-post.html" class="read-more">Leer artículo <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post Placeholder 2 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="../img/oficina.webp" alt="SEO Local Córdoba" loading="lazy">
+                            </div>
+                            <div class="blog-content">
+                                <span class="blog-category">SEO Local</span>
+                                <h3 class="blog-title">7 trucos para aparecer 1º en Google Maps</h3>
+                                <p class="blog-excerpt">Si tienes un negocio físico en Córdoba, necesitas estar arriba en el mapa. Te enseño cómo optimizar tu ficha de Google Business Profile.</p>
+                                <a href="plantilla-post.html" class="read-more">Leer artículo <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post Placeholder 3 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <img src="../img/about.webp" alt="WordPress vs Shopify" loading="lazy">
+                            </div>
+                            <div class="blog-content">
+                                <span class="blog-category">E-commerce</span>
+                                <h3 class="blog-title">WordPress vs Shopify: ¿Qué elegir en 2026?</h3>
+                                <p class="blog-excerpt">Analizamos las ventajas y costes de ambas plataformas para que elijas la que mejor se adapte a tu tienda online.</p>
+                                <a href="plantilla-post.html" class="read-more">Leer artículo <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer light-background">
+        <div class="container border-top pt-4 text-center">
+            <p>© 2026 <strong>Juan José Jurado</strong> · Diseño Web Córdoba</p>
+        </div>
+    </footer>
+
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
