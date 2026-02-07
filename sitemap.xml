@@ -100,12 +100,12 @@
     <priority>0.95</priority>
   </url>
 
-  <!-- Blog -->
+  <!-- Blog 
   <url>
     <loc>https://diseñowebcordoba.es/blog/</loc>
     <lastmod>2026-01-11</lastmod>
     <priority>0.7</priority>
-  </url>
+  </url> -->
 
   <!-- Landings Locales (Fase 4) -->
   <url>
